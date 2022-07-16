@@ -21,7 +21,7 @@ class TwitterSent():
     def get_tweets(self, q, c = 100):
         res = []
         try:
-            token = "AAAAAAAAAAAAAAAAAAAAANcqZAEAAAAAGYEzPg7EIh0WdnoTaS8rXSIYNdY%3Do7xtVBFN3NHnngr8IGYTS7fge66OInPe5GKp7F1GGcxwDAJyga"
+            token = "" #enter bearer token
             client = tweepy.Client(bearer_token = token)
             print("Authenticated")
             tweets = client.search_recent_tweets(query = q, max_results = c)
